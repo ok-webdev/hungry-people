@@ -6,10 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hungry people</title>
   <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <!-- Libs -->
+  <link rel="stylesheet" href="css/flatpickr.min.css">
+  <link rel="stylesheet" href="css/choices.min.css" />
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/glightbox.min.css">
+  <!-- Custom -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -17,7 +21,13 @@
   <div class="container">
     <header class="header">
       <div class="content header-content">
+        <div class="header-nav-menu">
+          <img src="svg/menu.svg" alt="menu">
+        </div>
         <nav class="header-nav">
+          <div class="header-nav-close">
+            <img src="svg/close.svg" alt="close">
+          </div>
           <div class="header-nav__element">
             <a href="#" class="header-nav__link">Home</a>
             <a href="#" class="header-nav__link">About</a>
@@ -187,7 +197,7 @@
     <section class="menu">
       <div class="content">
         <div class="h2 section-title">DELICIOUS MENU</div>
-        <span class="menu__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+        <span class="section-text section-text__bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
           numquam.</span>
         <div>
           <ul id="menu-tabs" class="menu-tabs">
@@ -557,12 +567,14 @@
         <div class="section-content-media section-content-media_align-left">
           <div class="section-content-media-image section-content-media-image_align-left">
             <img src="images/event-weddings.png" alt="weddings">
+            <span class="event-element__name event-element__name_top">Weddings</span>
           </div>
         </div>
         <!-- /.section-content-media -->
-        <div class="section-content-media section-content-media_align-left">
-          <div class="section-content-media-image section-content-media-image_align-left">
+        <div class="section-content-media">
+          <div class="section-content-media-image">
             <img src="images/event-corporate.png" alt="corporate">
+            <span class="event-element__name event-element__name_bottom">Corporates</span>
           </div>
         </div>
         <!-- /.section-content-media -->
@@ -570,11 +582,52 @@
       <!-- /.content -->
     </section>
     <!-- /.events -->
+    <section class="gallery">
+      <a href="./images/gallery1.jpg" class="gallery-image" style="background-image: url(./images/gallery1.jpg)"></a>
+      <a href="./images/gallery2.jpg" class="gallery-image" style="background-image: url(./images/gallery2.jpg)"></a>
+      <a href="./images/gallery3.jpg" class="gallery-image" style="background-image: url(./images/gallery3.jpg)"></a>
+      <a href="./images/gallery4.jpg" class="gallery-image" style="background-image: url(./images/gallery4.jpg)"></a>
+    </section>
+    <!-- /.gallery -->
+    <section class="contact">
+      <div class="content">
+        <h2 class="section-title">Contact</h2>
+        <span class="section-text section-text__bold">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, in! Tenetur, totam.
+        </span>
+        <form action="POST" class="contact-form">
+          <div class="contact-form-contacts">
+            <input type="text" name="Name" placeholder="Name" class="input-text contact-form-contacts__input">
+            <input type="email" name="Email" placeholder="Email" class="input-text contact-form-contacts__input">
+            <input type="tel" name="Phone" placeholder="Phone"
+              class="input-text input-phone contact-form-contacts__input">
+          </div>
+          <textarea class="input-textarea contact-form__message" name="message" placeholder="Message"></textarea>
+          <button class="btn contact-form-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- /.contact -->
+    <section class="map">
+      <iframe class="map-google" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23303.967164564954!2d131.9442881!3d43.10460115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1592798581082!5m2!1sru!2sru" width="100%" height="475" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    </section>
+    <!-- /.map -->
+    <footer class="footer">
+      © Copyright <strong>Mindblister</strong> 2019
+    </footer>
+    <!-- /.footer -->
   </div>
-  <script src="https://unpkg.com/imask"></script>
-  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <!-- /.container -->
+
+  <!-- Scripts -->
+  <!-- Libs -->
+  <script src="js/imask.js"></script>
+  <script src="js/choices.min.js"></script>
+  <script src="js/flatpickr.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/glightbox.min.js"></script>
+  <!-- Custom -->
   <script src="js/script.js"></script>
 </body>
 

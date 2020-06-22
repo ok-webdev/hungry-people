@@ -57,3 +57,14 @@ tabsName.forEach((tab) => {
     tabClick(event.target.parentElement.id, event.target.dataset.menuTabsName);
   });
 });
+
+// Lightbox gallery
+
+const lightbox = GLightbox({
+  selector: '.gallery-image',
+  touchNavigation: true,
+  keyboardNavigation: true,
+  loop: true,
+  openEffect: "fadeIn",
+  closeEffect: "fadeOut"
+});
