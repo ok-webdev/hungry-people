@@ -80,7 +80,7 @@ const mobileMenuClose = document.querySelector('.header-nav-close');
 const mobileMenu = document.querySelector('.header-nav');
 
 mobileMenuButton.addEventListener('click', function() {
-  mobileMenu.classList.add('header-nav_active')
+  mobileMenu.classList.add('header-nav_active');
 });
 
 mobileMenuClose.addEventListener('click', function() {
