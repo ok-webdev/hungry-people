@@ -68,3 +68,21 @@ const lightbox = GLightbox({
   openEffect: "fadeIn",
   closeEffect: "fadeOut"
 });
+
+// Smooth scroll
+const scroll = new SmoothScroll('.header-nav__link[href*="#"]');
+
+
+// Mob menu
+
+const mobileMenuButton = document.querySelector('.header-nav-menu');
+const mobileMenuClose = document.querySelector('.header-nav-close');
+const mobileMenu = document.querySelector('.header-nav');
+
+mobileMenuButton.addEventListener('click', function() {
+  mobileMenu.classList.add('header-nav_active')
+});
+
+mobileMenuClose.addEventListener('click', function() {
+  mobileMenu.classList.remove('header-nav_active');
+});

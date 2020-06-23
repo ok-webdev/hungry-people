@@ -30,16 +30,16 @@
           </div>
           <div class="header-nav__element">
             <a href="#" class="header-nav__link">Home</a>
-            <a href="#" class="header-nav__link">About</a>
-            <a href="#" class="header-nav__link">Team</a>
-            <a href="#" class="header-nav__link">Booking</a>
+            <a href="#about" class="header-nav__link">About</a>
+            <a href="#team" class="header-nav__link">Team</a>
+            <a href="#booking" class="header-nav__link">Booking</a>
           </div>
           <img src="./svg/helm.svg" alt="Helm" class="header-nav__helm" />
           <div class="header-nav__element">
-            <a href="#" class="header-nav__link">Menu</a>
-            <a href="#" class="header-nav__link">Gallery</a>
-            <a href="#" class="header-nav__link">Events</a>
-            <a href="#" class="header-nav__link">Contact</a>
+            <a href="#menu" class="header-nav__link">Menu</a>
+            <a href="#gallery" class="header-nav__link">Gallery</a>
+            <a href="#events" class="header-nav__link">Events</a>
+            <a href="#contact" class="header-nav__link">Contact</a>
           </div>
         </nav>
         <!-- /.header-nav -->
@@ -69,7 +69,7 @@
       </div>
     </header>
     <!-- /.header -->
-    <section class="about">
+    <section class="about" id="about">
       <div class="content section-content">
         <div class="section-content-information">
           <h2 class="section-title">About us</h2>
@@ -90,7 +90,7 @@
       <!-- /.content -->
     </section>
     <!-- /.about -->
-    <section class="team">
+    <section class="team" id="team">
       <div class="content section-content">
         <div class="section-content-media section-content-media_align-left">
           <div class="section-content-media-image section-content-media-image_align-left">
@@ -110,8 +110,8 @@
       <!-- /.content -->
     </section>
     <!-- /.team -->
-    <section class="book">
-      <div class="content section-content">
+    <section class="book" id="book">
+      <div class="content section-content book-content">
         <div class="section-content-information">
           <h2 class="section-title">book a table</h2>
           <form action="#" class="book-order">
@@ -132,7 +132,7 @@
           </form>
         </div>
         <!-- /.section-content-information -->
-        <div class="section-content-media">
+        <div class="section-content-media book-media">
           <div class="section-content-media-image">
             <img src="images/book-img.jpg" alt="Book">
           </div>
@@ -142,7 +142,7 @@
       <!-- /.content -->
     </section>
     <!-- /.book -->
-    <section class="products">
+    <section class="products" id="products">
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -194,7 +194,7 @@
       <!-- /.swiper-container -->
     </section>
     <!-- /.products -->
-    <section class="menu">
+    <section class="menu" id="menu">
       <div class="content">
         <div class="h2 section-title">DELICIOUS MENU</div>
         <span class="section-text section-text__bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
@@ -562,7 +562,7 @@
       <!-- /.content -->
     </section>
     <!-- /.menu -->
-    <section class="events">
+    <section class="events" id="events">
       <div class="content section-content">
         <div class="section-content-media section-content-media_align-left">
           <div class="section-content-media-image section-content-media-image_align-left">
@@ -582,14 +582,14 @@
       <!-- /.content -->
     </section>
     <!-- /.events -->
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <a href="./images/gallery1.jpg" class="gallery-image" style="background-image: url(./images/gallery1.jpg)"></a>
       <a href="./images/gallery2.jpg" class="gallery-image" style="background-image: url(./images/gallery2.jpg)"></a>
       <a href="./images/gallery3.jpg" class="gallery-image" style="background-image: url(./images/gallery3.jpg)"></a>
       <a href="./images/gallery4.jpg" class="gallery-image" style="background-image: url(./images/gallery4.jpg)"></a>
     </section>
     <!-- /.gallery -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="content">
         <h2 class="section-title">Contact</h2>
         <span class="section-text section-text__bold">
@@ -608,9 +608,8 @@
       </div>
     </section>
     <!-- /.contact -->
-    <section class="map">
+    <section class="map" id="map">
       <iframe class="map-google" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23303.967164564954!2d131.9442881!3d43.10460115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1592798581082!5m2!1sru!2sru" width="100%" height="475" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-
     </section>
     <!-- /.map -->
     <footer class="footer">
@@ -627,6 +626,7 @@
   <script src="js/flatpickr.js"></script>
   <script src="js/swiper.min.js"></script>
   <script src="js/glightbox.min.js"></script>
+  <script src="js/smooth-scroll.polyfills.min.js"></script>
   <!-- Custom -->
   <script src="js/script.js"></script>
 </body>
