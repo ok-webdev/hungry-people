@@ -70,19 +70,42 @@ const lightbox = GLightbox({
 });
 
 // Smooth scroll
-const scroll = new SmoothScroll('.header-nav__link[href*="#"]');
+const scroll = new SmoothScroll('.header-nav__link[href*="#"], .up[href*="#"]');
 
+// Up arrow
 
+const upButton = document.querySelector('.up');
+
+const scrollShow = function () {
+  const scrolled = window.pageYOffset;
+  
+  const coords = document.documentElement.clientHeight;
+  if (scrolled > coords) {
+    upButton.classList.add('up_show');
+  }
+  if (scrolled < coords) {
+    upButton.classList.remove('up_show');
+  }
+};
+const scrollBack = function () {
+  if (window.pageYOffset > 0) {
+    window.scrollBy(0, -80);
+    setTimeout(scrollBack, 0);
+  }
+};
+
+window.addEventListener('scroll', scrollShow);
+upButton.addEventListener('click', scrollBack);
 // Mob menu
 
 const mobileMenuButton = document.querySelector('.header-nav-menu');
 const mobileMenuClose = document.querySelector('.header-nav-close');
 const mobileMenu = document.querySelector('.header-nav');
 
-mobileMenuButton.addEventListener('click', function() {
+mobileMenuButton.addEventListener('click', function () {
   mobileMenu.classList.add('header-nav_active');
 });
 
-mobileMenuClose.addEventListener('click', function() {
+mobileMenuClose.addEventListener('click', function () {
   mobileMenu.classList.remove('header-nav_active');
 });
