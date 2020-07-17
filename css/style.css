@@ -217,7 +217,7 @@ section {
   position: absolute;
   top: 25px;
   left: 50%;
-  margin-left: -75px;
+  transform: translateX(-50%);
 }
 
 .header-nav__link {
@@ -228,6 +228,7 @@ section {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
+  transition: all 1s ease-in-out 0.5s;
 }
 
 .header-nav__link:hover {
@@ -780,5 +781,11 @@ section {
   }
   .map-google {
     height: 200px;
+  }
+}
+
+@media (max-height: 730px) {
+  .header-nav__helm{
+    height: 15vh;
   }
 }
